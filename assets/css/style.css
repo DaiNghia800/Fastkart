@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Public Sans", sans-serif;
+}
+
+/* Desktop lớn (≥ 1200px) */
+@media (min-width: 1201px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+/* Desktop vừa (992px – 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+
+/* Tablet ngang / Laptop nhỏ (768px – 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+
+
+/* Tablet nhỏ (576px – 768px) */
+@media(max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+
+/* Mobile nhỏ (≤ 576px) */
+@media (max-width: 576px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
