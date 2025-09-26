@@ -1,10 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --theme-color: #0baf9a;
+}
 * {
     box-sizing: border-box;
 }
 body {
     font-family: "Public Sans", sans-serif;
 }
+
+/* index-page */
+.header-notification {
+  background-color: var(--theme-color);
+}
+.header-notification .item-notify {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.header-notification .close-notification {
+  right: 11px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.location-button::after {
+  content: '\f3c5';
+  font-family: "Font Awesome 7 Free";
+  font-weight: 300;
+}
+/*End index-page */
 
 /* Desktop lớn (≥ 1200px) */
 @media (min-width: 1201px) {

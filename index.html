@@ -1,18 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/slick/slick.css">
     <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/fontawesome-free-7.0.1-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <section class="home-page">
+    <!-- Top Bar -->
+    <div class="header-notification text-white text-center position-relative py-2">
+        <div class="item">
+            <p class="item-notify m-0">Free shipping on all your order. We deliver you enjoy</p>
+        </div>
+        <button class="btn close-notification position-absolute top-50 translate-middle"><span>Close</span> <i
+                class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Header -->
+    <header class="container py-3">
+        <div class="row align-items-center">
+
+            <!-- Logo -->
+            <div class="col-md-2">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="img-cover" src="./assets/images/logo-fastkart.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- Search box -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="location-box-2">
+                    <button class="btn location-button" data-bs-toggle="modal" data-bs-target="#locationModal">
+                        
+                    </button>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search for product, delivered to your door..." aria-label="Search">
+                    <button class="btn search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Icons & Dropdowns -->
+            <div class="col-md-4 d-flex justify-content-end align-items-center gap-3">
+                <select class="form-select w-auto">
+                    <option>Language</option>
+                    <option>English</option>
+                    <option>Vietnamese</option>
+                </select>
+                <select class="form-select w-auto">
+                    <option>Dollar</option>
+                    <option>USD</option>
+                    <option>VND</option>
+                </select>
+                <span>🔄</span>
+                <span>🤍</span>
+                <span>🛒</span>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <h1 class="title">Heloo FastCart</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#">All Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mega Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Seller</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+
+            <!-- Left banner -->
+            <div class="col-md-6 text-center text-md-start">
+                <h6 class="text-success">ORGANIC</h6>
+                <h1 class="fw-bold">100% Fresh</h1>
+                <p class="fs-4">Fruit & Vegetables</p>
+                <p class="text-muted">Free shipping on all your order. We deliver you enjoy</p>
+                <button class="btn btn-success btn-lg">Shop Now</button>
+            </div>
+
+            <!-- Right banner -->
+            <div class="col-md-6 text-center p-4 bg-success text-white rounded">
+                <h3>Fresh & 100% Organic <br> farmer's market</h3>
+                <button class="btn btn-light mt-3">Shop Now</button>
+            </div>
+
         </div>
     </section>
 </body>
@@ -21,4 +119,5 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="./libs/slick/slick.min.js"></script>
 <script src="./assets/js/script.js"></script>
+
 </html>
