@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./libs/fontawesome-free-7.0.1-web/css/all.min.css">
+  <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./libs/slick/slick.css">
+  <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>User Dashboard</title>
+</head>
+
+<body>
+  <!-- user dahboard -->
+  <div class="bg-overlay"></div>
+
+  <section class="user-dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-3 col-lg-4">
+          <div class="box-left">
+            <div class="box-profile">
+              <div class="close-button d-lg-none d-flex">
+                <button>
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div class="cover-img">
+                <img src="./assets/images/cover-img.jpg" alt="">
+              </div>
+              <div class="profile-contain text-center">
+                <div class="profile-img">
+                  <img src="./assets/images/avatar.jpg" alt="" class="">
+                  <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                  </div>
+                </div>
+                <div class="profile-name">
+                  <h3>Vicki E. Pope</h3>
+                  <h6>vicki.pope@gmail.com</h6>
+                </div>
+              </div>
+            </div>
+            <ul class="nav nav-pills user-nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <li class="nav-item w-100">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                  aria-selected="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-home">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  Dashboard
+                </button>
+              </li>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order"
+                  type="button" role="tab" aria-controls="v-pills-order" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-shopping-bag">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  Order
+                </button>
+              </li>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-wishlist-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist"
+                  aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-heart">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  Wishlist
+                </button>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-saved-card-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-saved-card" type="button" role="tab" aria-controls="v-pills-saved-card"
+                  aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-credit-card">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                  Saved Card
+                </button>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-address-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-address" type="button" role="tab" aria-controls="v-pills-address"
+                  aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-map-pin">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Address
+                </button>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                  aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-user">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Profile
+                </button>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-download-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-download" type="button" role="tab" aria-controls="v-pills-download"
+                  aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-download">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download
+                </button>
+              <li class="nav-item w-100">
+                <button class="nav-link" id="v-pills-privacy-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-privacy" type="button" role="tab" aria-controls="v-pills-privacy"
+                  aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-shield">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  Privacy
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xxl-9 col-lg-8">
+          <button class="left-dashboard-show btn btn-lg btn-animation fw-bold mb-4 d-lg-none d-block">show menu</button>
+          <div class="box-right">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab">
+                <div>
+                  <div class="title">
+                    <h2>My Dashboard</h2>
+                    <span class="title-leaf text-center">
+                      <i class="fa-solid fa-seedling"></i>
+                    </span>
+                  </div>
+                  <div class="dashboard-user-name">
+                    <h6>
+                      Hello,
+                      <b class="text-black">Vicki E. Pope</b>
+                    </h6>
+                    <p>From your My Account Dashboard you have the ability to
+                      view a snapshot of your recent account activity and update your account
+                      information. Select a link below to view or edit information.</p>
+                  </div>
+                  <div class="box-total">
+                    <div class="row g-sm-4 g-3">
+                      <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                        <div class="total-contain">
+                          <img src="./assets/images/order.svg" alt="" class="img-1">
+                          <img src="./assets/images/order.svg" alt="">
+                          <div class="total-detail">
+                            <h5>Total Wishlist</h5>
+                            <h3>32158</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                        <div class="total-contain">
+                          <img src="./assets/images/pending.svg" alt="" class="img-1">
+                          <img src="./assets/images/pending.svg" alt="">
+                          <div class="total-detail">
+                            <h5>Total Pending Order</h5>
+                            <h3>254</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                        <div class="total-contain">
+                          <img src="./assets/images/wishlist.svg" alt="" class="img-1">
+                          <img src="./assets/images/wishlist.svg" alt="">
+                          <div class="total-detail">
+                            <h5>Total Wishlist</h5>
+                            <h3>32158</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dashboard-title mb-4">
+                    <h3>Account Information</h3>
+                  </div>
+                  <div class="row g-4">
+                    <div class="col-xxl-6">
+                      <div class="dashboard-content-title">
+                        <div class="title d-flex justify-content-between align-items-center">
+                          Contact Information
+                          <a href="#">Edit</a>
+                        </div>
+                      </div>
+                      <div class="dashboard-content-detail">
+                        <h6>MARK JECNO</h6>
+                        <h6>vicki.pope@gmail.com</h6>
+                        <a href="#">Change Password</a>
+                      </div>
+                    </div>
+                    <div class="col-xxl-6">
+                      <div class="dashboard-content-title">
+                        <div class="title d-flex justify-content-between align-items-center">
+                          Newsletters
+                          <a href="#">Edit</a>
+                        </div>
+                      </div>
+                      <div class="dashboard-content-detail">
+                        <p>You are currently not subscribed to any newsletter</p>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="dashboard-content-title">
+                        <div class="title d-flex justify-content-between align-items-center">
+                          Address Book
+                          <a href="#">Edit</a>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="row g-4">
+                          <div class="dashboard-content-detail col-6">
+                            <h6>Default Billing Address</h6>
+                            <h6>You have not set a default billing address.</h6>
+                            <a href="#">Edit Address</a>
+                          </div>
+                          <div class="dashboard-content-detail col-6">
+                            <h6>Default Billing Address</h6>
+                            <h6>You have not set a default billing address.</h6>
+                            <a href="#">Edit Address</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+                <div class="dashboard-order">
+                  <div class="title">
+                    <h2>My Orders History</h2>
+                    <span class="title-leaf text-center">
+                      <i class="fa-solid fa-seedling"></i>
+                    </span>
+                  </div>
+                  <div class="order-contain">
+                    <div class="box-order">
+                      <div class="order-title">
+                        <div class="order-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-box">
+                            <path
+                              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                          </svg>
+                        </div>
+                        <div class="order-detail">
+                          <h4>
+                            Delivers
+                            <span class="pending-bg">Pending</span>
+                          </h4>
+                          <p>Gouda parmesan caerphilly mozzarella cottage cheese cauliflower cheese taleggio gouda.</p>
+                        </div>
+                      </div>
+                      <div class="product-order-detail">
+                        <a href="#" class="order-img">
+                          <img src="./assets/images/1.png" alt="" class="">
+                        </a>
+                        <div class="order-content">
+                          <a href="#">
+                            <h3>Fantasy Crunchy Choco Chip Cookies</h3>
+                          </a>
+                          <p>Cheddar dolcelatte gouda. Macaroni cheese
+                            cheese strings feta halloumi cottage cheese jarlsberg cheese
+                            triangles say cheese.
+                          </p>
+                          <ul class="product-size">
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Price:</h6>
+                              <h5>$20.68</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Rate:</h6>
+                              <ul class="d-flex align-items-center ms-2">
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Sold By:</h6>
+                              <h5>Fresho</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Qunatity:</h6>
+                              <h5>250 G</h5>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-order">
+                      <div class="order-title">
+                        <div class="order-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-box">
+                            <path
+                              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                          </svg>
+                        </div>
+                        <div class="order-detail">
+                          <h4>
+                            Delivers
+                            <span class="success-bg">Success</span>
+                          </h4>
+                          <p>Gouda parmesan caerphilly mozzarella cottage cheese cauliflower cheese taleggio gouda.</p>
+                        </div>
+                      </div>
+                      <div class="product-order-detail">
+                        <a href="#" class="order-img">
+                          <img src="./assets/images/1.png" alt="">
+                        </a>
+                        <div class="order-content">
+                          <a href="#">
+                            <h3>Fantasy Crunchy Choco Chip Cookies</h3>
+                          </a>
+                          <p>Cheddar dolcelatte gouda. Macaroni cheese
+                            cheese strings feta halloumi cottage cheese jarlsberg cheese
+                            triangles say cheese.
+                          </p>
+                          <ul class="product-size">
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Price:</h6>
+                              <h5>$20.68</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Rate:</h6>
+                              <ul class="d-flex align-items-center ms-2">
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Sold By:</h6>
+                              <h5>Fresho</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Qunatity:</h6>
+                              <h5>250 G</h5>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-order">
+                      <div class="order-title">
+                        <div class="order-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-box">
+                            <path
+                              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                          </svg>
+                        </div>
+                        <div class="order-detail">
+                          <h4>
+                            Delivers
+                            <span class="pending-bg">Pending</span>
+                          </h4>
+                          <p>Gouda parmesan caerphilly mozzarella cottage cheese cauliflower cheese taleggio gouda.</p>
+                        </div>
+                      </div>
+                      <div class="product-order-detail">
+                        <a href="#" class="order-img">
+                          <img src="./assets/images/1.png" alt="">
+                        </a>
+                        <div class="order-content">
+                          <a href="#">
+                            <h3>Fantasy Crunchy Choco Chip Cookies</h3>
+                          </a>
+                          <p>Cheddar dolcelatte gouda. Macaroni cheese
+                            cheese strings feta halloumi cottage cheese jarlsberg cheese
+                            triangles say cheese.
+                          </p>
+                          <ul class="product-size">
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Price:</h6>
+                              <h5>$20.68</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Rate:</h6>
+                              <ul class="d-flex align-items-center ms-2">
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Sold By:</h6>
+                              <h5>Fresho</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Qunatity:</h6>
+                              <h5>250 G</h5>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-order">
+                      <div class="order-title">
+                        <div class="order-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-box">
+                            <path
+                              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                          </svg>
+                        </div>
+                        <div class="order-detail">
+                          <h4>
+                            Delivers
+                            <span class="success-bg">Pending</span>
+                          </h4>
+                          <p>Gouda parmesan caerphilly mozzarella cottage cheese cauliflower cheese taleggio gouda.</p>
+                        </div>
+                      </div>
+                      <div class="product-order-detail">
+                        <a href="#" class="order-img">
+                          <img src="./assets/images/1.png" alt="">
+                        </a>
+                        <div class="order-content">
+                          <a href="#">
+                            <h3>Fantasy Crunchy Choco Chip Cookies</h3>
+                          </a>
+                          <p>Cheddar dolcelatte gouda. Macaroni cheese
+                            cheese strings feta halloumi cottage cheese jarlsberg cheese
+                            triangles say cheese.
+                          </p>
+                          <ul class="product-size">
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Price:</h6>
+                              <h5>$20.68</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Rate:</h6>
+                              <ul class="d-flex align-items-center ms-2">
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Sold By:</h6>
+                              <h5>Fresho</h5>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                              <h6>Qunatity:</h6>
+                              <h5>250 G</h5>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab">
+                <div class="dashboard-wishlist">
+                  <div class="title">
+                    <h2>My Orders History</h2>
+                    <span class="title-leaf text-center">
+                      <i class="fa-solid fa-seedling"></i>
+                    </span>
+                  </div>
+                  <div class="row g-4">
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Fresh Bread and Pastry Flour 200 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Fresh Bread and Pastry Flour 200 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Fresh Bread and Pastry Flour 200 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Fresh Bread and Pastry Flour 200 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Fresh Bread and Pastry Flour 200 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Peanut Butter Bite Premium Butter Cookies 600 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                      <div class="product-box">
+                        <div class="product-img">
+                          <a href="#">
+                            <img src="./assets/images/2.png" alt="" class="w-100 object-fit-contain">
+                          </a>
+                          <div class="button-delete">
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="product-body">
+                          <span class="category">Vegetable</span>
+                          <a href="#" class="name">
+                            <h5>Fresh Bread and Pastry Flour 200 g</h5>
+                          </a>
+                          <span class="capacity">250 ml</span>
+                          <span class="price">
+                            $08.02
+                            <del>$15.15</del>
+                          </span>
+                        </div>
+                        <div class="box-add-to-cart">
+                          <button class="button-add-cart">
+                            Add
+                            <span>
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </button>
+                          <div class="cart-qty">
+                            <div class="group-input">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <input type="text" value="0" class="input-number w-100">
+                              <button type="button">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-saved-card" role="tabpanel"
+                aria-labelledby="v-pills-saved-card-tab">
+                <div class="dashboard-saved-card">
+                  <div class="title d-xl-flex d-block justify-content-between align-items-center">
+                    <div>
+                      <h2>My address book</h2>
+                      <span class="title-leaf text-center">
+                        <i class="fa-solid fa-seedling"></i>
+                      </span>
+                    </div>
+                    <div class="button-addnew mt-xl-0 mt-2">
+                      <button class="btn text-capitalize text-white fw-bold">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        Add new cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row g-4">
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+                      <div class="payment-card-detail">
+                        <div class="card-detail">
+                          <div class="card-number">
+                            <h4>XXXX - XXXX - XXXX - 2548</h4>
+                          </div>
+                          <div class="valid-detail d-flex align-items-center">
+                            <div class="title mb-0">
+                              <span>valid</span>
+                              <span>thru</span>
+                            </div>
+                            <div class="date">
+                              <h3>08/05</h3>
+                            </div>
+                            <div class="primary">
+                              <span>primary</span>
+                            </div>
+                          </div>
+                          <div class="name-detail">
+                            <div class="name">
+                              <h5>Leah Heather</h5>
+                            </div>
+                            <div class="img">
+                              <img src="./assets/images/1 (1).jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-card">
+                          <a href="#">
+                            <i class="far fa-edit"></i>
+                            edit
+                          </a>
+                          <a href="#">
+                            <i class="far fa-minus-square"></i>
+                            delete
+                          </a>
+                        </div>
+                      </div>
+                      <div class="edit-card-mobile d-md-none d-flex justify-content-center align-items-center mt-2">
+                        <a href="#">
+                          <i class="far fa-edit"></i>
+                          edit
+                        </a>
+                        <a href="#">
+                          <i class="far fa-minus-square"></i>
+                          delete
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+                      <div class="payment-card-detail">
+                        <div class="card-detail card-visa">
+                          <div class="card-number">
+                            <h4>XXXX - XXXX - XXXX - 2548</h4>
+                          </div>
+                          <div class="valid-detail d-flex align-items-center">
+                            <div class="title mb-0">
+                              <span>valid</span>
+                              <span>thru</span>
+                            </div>
+                            <div class="date">
+                              <h3>08/05</h3>
+                            </div>
+                            <div class="primary">
+                              <span>primary</span>
+                            </div>
+                          </div>
+                          <div class="name-detail">
+                            <div class="name">
+                              <h5>Leah Heather</h5>
+                            </div>
+                            <div class="img">
+                              <img src="./assets/images/1 (1).jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-card">
+                          <a href="#">
+                            <i class="far fa-edit"></i>
+                            edit
+                          </a>
+                          <a href="#">
+                            <i class="far fa-minus-square"></i>
+                            delete
+                          </a>
+                        </div>
+                      </div>
+                      <div class="edit-card-mobile d-md-none d-flex justify-content-center align-items-center mt-2">
+                        <a href="#">
+                          <i class="far fa-edit"></i>
+                          edit
+                        </a>
+                        <a href="#">
+                          <i class="far fa-minus-square"></i>
+                          delete
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+                      <div class="payment-card-detail">
+                        <div class="card-detail card-debit">
+                          <div class="card-number">
+                            <h4>XXXX - XXXX - XXXX - 2548</h4>
+                          </div>
+                          <div class="valid-detail d-flex align-items-center">
+                            <div class="title mb-0">
+                              <span>valid</span>
+                              <span>thru</span>
+                            </div>
+                            <div class="date">
+                              <h3>08/05</h3>
+                            </div>
+                            <div class="primary">
+                              <span>primary</span>
+                            </div>
+                          </div>
+                          <div class="name-detail">
+                            <div class="name">
+                              <h5>Leah Heather</h5>
+                            </div>
+                            <div class="img">
+                              <img src="./assets/images/1 (1).jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-card">
+                          <a href="#">
+                            <i class="far fa-edit"></i>
+                            edit
+                          </a>
+                          <a href="#">
+                            <i class="far fa-minus-square"></i>
+                            delete
+                          </a>
+                        </div>
+                      </div>
+                      <div class="edit-card-mobile d-md-none d-flex justify-content-center align-items-center mt-2">
+                        <a href="#">
+                          <i class="far fa-edit"></i>
+                          edit
+                        </a>
+                        <a href="#">
+                          <i class="far fa-minus-square"></i>
+                          delete
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
+                <div class="dashboard-address">
+                  <div class="title d-xl-flex d-block justify-content-between align-items-center">
+                    <div>
+                      <h2>My address book</h2>
+                      <span class="title-leaf text-center">
+                        <i class="fa-solid fa-seedling"></i>
+                      </span>
+                    </div>
+                    <div class="button-addnew mt-2">
+                      <button class="btn text-capitalize text-white fw-bold">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        Add new address
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                      <div class="address-box">
+                        <div class="position-relative d-flex">
+                          <div class="form-check">
+                            <input type="radio" name="addressbox" id="addressbox1" class="form-check-input" checked>
+                          </div>
+                          <div class="label">
+                            <label>Home</label>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td colspan="2">Terry S. Sutton</td>
+                              </tr>
+                              <tr>
+                                <td>Address :</td>
+                                <td>
+                                  <p>2280 Rose Avenue Kenner, LA 70062</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Pin Code :</td>
+                                <td>
+                                  <p>+25</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Phone :</td>
+                                <td>
+                                  <p>+ 504-228-0969</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="button-group">
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Edit
+                          </button>
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                      <div class="address-box">
+                        <div class="position-relative d-flex">
+                          <div class="form-check">
+                            <input type="radio" name="addressbox" id="addressbox1" class="form-check-input">
+                          </div>
+                          <div class="label">
+                            <label>Home</label>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td colspan="2">Terry S. Sutton</td>
+                              </tr>
+                              <tr>
+                                <td>Address :</td>
+                                <td>
+                                  <p>2280 Rose Avenue Kenner, LA 70062</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Pin Code :</td>
+                                <td>
+                                  <p>+25</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Phone :</td>
+                                <td>
+                                  <p>+ 504-228-0969</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="button-group">
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Edit
+                          </button>
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                      <div class="address-box">
+                        <div class="position-relative d-flex">
+                          <div class="form-check">
+                            <input type="radio" name="addressbox" id="addressbox1" class="form-check-input">
+                          </div>
+                          <div class="label">
+                            <label>Home</label>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td colspan="2">Terry S. Sutton</td>
+                              </tr>
+                              <tr>
+                                <td>Address :</td>
+                                <td>
+                                  <p>2280 Rose Avenue Kenner, LA 70062</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Pin Code :</td>
+                                <td>
+                                  <p>+25</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Phone :</td>
+                                <td>
+                                  <p>+ 504-228-0969</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="button-group">
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Edit
+                          </button>
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                      <div class="address-box">
+                        <div class="position-relative d-flex">
+                          <div class="form-check">
+                            <input type="radio" name="addressbox" id="addressbox1" class="form-check-input">
+                          </div>
+                          <div class="label">
+                            <label>Home</label>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td colspan="2">Terry S. Sutton</td>
+                              </tr>
+                              <tr>
+                                <td>Address :</td>
+                                <td>
+                                  <p>2280 Rose Avenue Kenner, LA 70062</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Pin Code :</td>
+                                <td>
+                                  <p>+25</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Phone :</td>
+                                <td>
+                                  <p>+ 504-228-0969</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="button-group">
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Edit
+                          </button>
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                      <div class="address-box">
+                        <div class="position-relative d-flex">
+                          <div class="form-check">
+                            <input type="radio" name="addressbox" id="addressbox1" class="form-check-input">
+                          </div>
+                          <div class="label">
+                            <label>Home</label>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td colspan="2">Terry S. Sutton</td>
+                              </tr>
+                              <tr>
+                                <td>Address :</td>
+                                <td>
+                                  <p>2280 Rose Avenue Kenner, LA 70062</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Pin Code :</td>
+                                <td>
+                                  <p>+25</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Phone :</td>
+                                <td>
+                                  <p>+ 504-228-0969</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="button-group">
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Edit
+                          </button>
+                          <button class="btn btn-sm w-100">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="dashboard-profile">
+                  <div class="title">
+                    <h2>My profile</h2>
+                    <span class="title-leaf text-center">
+                      <i class="fa-solid fa-seedling"></i>
+                    </span>
+                  </div>
+                  <div class="profile-detail dashboard-bg-box">
+                    <div class="profile-title mb-4">
+                      <h3>Profile name</h3>
+                    </div>
+                    <div class="profile-name d-sm-flex d-block justify-content-between align-items-center">
+                      <div class="d-sm-flex d-block align-items-center">
+                        <h3>Vicki E. Pope</h3>
+                        <ul class="d-flex mb-0">
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li class="ms-1">
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li class="ms-1">
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li class="ms-1">
+                            <i class="fa-regular fa-star"></i>
+                          </li>
+                          <li class="ms-1">
+                            <i class="fa-regular fa-star"></i>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="profile-button mt-sm-0 mt-2">
+                        <a href="#">
+                          Edit
+                        </a>
+                      </div>
+                    </div>
+                    <div class="profile-location">
+                      <ul class="d-flex flex-wrap align-items-center gap-4 mb-0">
+                        <li class="d-flex align-items-center gap-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-map-pin">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                          </svg>
+                          <h6 class="mb-0 fw-normal">Downers Grove, IL</h6>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                          </svg>
+                          <h6 class="mb-0 fw-normal">vicki.pope@gmail.com</h6>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-check-square">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                          </svg>
+                          <h6 class="mb-0 fw-normal">Licensed for 2 years</h6>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Residences can be classified by and how they are connected to
+                        neighbouring residences and land. Different types of housing tenure can
+                        be used for the same physical type.</p>
+                    </div>
+                  </div>
+                  <div class="profile-about dashboard-bg-box">
+                    <div class="row">
+                      <div class="col-xxl-7">
+                        <div class="box-about">
+                          <div class="profile-title">
+                            <h3>Profile name</h3>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>Gender :</td>
+                                <td>Female</td>
+                              </tr>
+                              <tr>
+                                <td>Birthday :</td>
+                                <td>21/05/1997</td>
+                              </tr>
+                              <tr>
+                                <td class="">Phone Number :</td>
+                                <td>
+                                  <a href="#"> +91 846 - 547 - 210</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Address :</td>
+                                <td>549 Sulphur Springs Road, Downers, IL</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="box-login-detail">
+                          <div class="profile-title">
+                            <h3>login detail</h3>
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>Email :</td>
+                                <td>
+                                  <a href="#">
+                                    vicki.pope@gmail.com
+                                    <span>Edit</span>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Password :</td>
+                                <td>
+                                  <a href="#">
+                                    ●●●●●●
+                                    <span>Edit</span>
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-xxl-5">
+                        <div class="profile-img">
+                          <img src="./assets/images/dashboard-profile.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-download" role="tabpanel" aria-labelledby="v-pills-download-tab">
+                <div class="dashboard-download">
+                  <div class="title">
+                    <h2>My profile</h2>
+                    <span class="title-leaf text-center">
+                      <i class="fa-solid fa-seedling"></i>
+                    </span>
+                  </div>
+                  <div class="download-detail">
+                    <form action="#">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search your download">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                      </div>
+                    </form>
+                    <div class="box-filter mt-3 d-flex flex-wrap gap-2 justify-content-between align-items-center">
+                      <select class="form-select" name="" id="">
+                        <option selected="">All marketplaces</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <ul class="nav nav-pills d-flex flex-nowrap overflow-auto text-nowrap" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-data-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-data" type="button" role="tab" aria-controls="pills-data"
+                            aria-selected="true">Data Purchased</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-title-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-title" type="button" role="tab" aria-controls="pills-title"
+                            aria-selected="false">Title</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-rating-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-rating" type="button" role="tab" aria-controls="pills-rating"
+                            aria-selected="false">My Rating</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-recent-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-recent" type="button" role="tab" aria-controls="pills-recent"
+                            aria-selected="false">Recent Updates</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-data" role="tabpanel"
+                        aria-labelledby="pills-data-tab">
+                        <div class="download-table mt-4">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>No</th>
+                                  <th>Image</th>
+                                  <th>Name</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-title" role="tabpanel" aria-labelledby="pills-title-tab">
+                        <div class="download-table mt-4">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>No</th>
+                                  <th>Image</th>
+                                  <th>Name</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-rating" role="tabpanel" aria-labelledby="pills-rating-tab">
+                        <div class="download-table mt-4">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>No</th>
+                                  <th>Image</th>
+                                  <th>Name</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-recent" role="tabpanel" aria-labelledby="pills-recent-tab">
+                        <div class="download-table mt-4">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>No</th>
+                                  <th>Image</th>
+                                  <th>Name</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <img src="./assets/images/1 (1).png" alt="">
+                                  </td>
+                                  <td>Sheltos - Real Estate Angular 17 Template</td>
+                                  <td>
+                                    <div class="dropdown download-dropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Download
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                          <a class="dropdown-item" href="#">All files
+                                            &amp; documentation</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (PDF)</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">License
+                                            certificate &amp; purchase code
+                                            (text)</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
+                <div class="dashboard-privacy">
+                  <div class="dashboard-bg-box">
+                    <div class="dashboard-title mb-4">
+                      <h3>Privacy</h3>
+                    </div>
+                    <div class="privacy-box">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h6>Allows others to see my profile</h6>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="redio">
+                          <label class="form-check-label" for="redio"></label>
+                        </div>
+                      </div>
+                      <p>all peoples will be able to see my profile</p>
+                    </div>
+                    <div class="privacy-box mt-3">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h6>Allows others to see my profile</h6>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="redio2">
+                          <label class="form-check-label" for="redio2"></label>
+                        </div>
+                      </div>
+                      <p>all peoples will be able to see my profile</p>
+                    </div>
+                    <button class="btn btn-md fw-bold mt-4 text-white text-capitalize button-privacy">save changes</button>
+                  </div>
+                  <div class="dashboard-bg-box mt-4">
+                    <div class="dashboard-title mb-4">
+                      <h3>Privacy</h3>
+                    </div>
+                    <div class="privacy-box">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h6>Allows others to see my profile</h6>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="redio3">
+                          <label class="form-check-label" for="redio3"></label>
+                        </div>
+                      </div>
+                      <p>all peoples will be able to see my profile</p>
+                    </div>
+                    <div class="privacy-box mt-3">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h6>Allows others to see my profile</h6>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="redio4">
+                          <label class="form-check-label" for="redio4"></label>
+                        </div>
+                      </div>
+                      <p>all peoples will be able to see my profile</p>
+                    </div>
+                    <button class="btn btn-md fw-bold mt-4 text-white text-capitalize button-privacy">delete my account</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end my dahboard -->
+</body>
+<script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./libs/slick/slick.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</html>
