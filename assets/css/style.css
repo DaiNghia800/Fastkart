@@ -292,7 +292,7 @@ span.badge-number {
 }
 
 .category-name .name {
-  -webkit-transition: all .3s ease-in-out;
+  -webkit-transition: all 0.5s;
   margin: 0 auto;
   font-size: calc(13px + 2 * (100vw - 320px) / 1600);
   letter-spacing: .7px;
@@ -499,6 +499,7 @@ ul.rating {
   list-style: none;
   padding: 0;
   margin: 0;
+  transition: all 0.5s;
 }
 
 ul.rating li svg {
@@ -542,6 +543,7 @@ ul.rating li svg.fill {
   color: var(--theme-color);
   font-weight: 500;
   margin-bottom: 10px;
+  transition: all 0.5s;
 }
 
 .deal-box .deal-detail .price span {
@@ -731,6 +733,7 @@ ul.list-tab li .btn-tab:hover {
     font-size: calc(15px + 1 * (100vw - 320px) / 1600);
     line-height: 1.2;
     margin: 5px 0 0 0;
+    transition: all 0.5s;
 }
 .price-qty {
   display: flex;
@@ -840,6 +843,139 @@ ul.list-tab li .btn-tab:hover {
 }
 .list-product-pro .item:hover .option li:nth-child(2) {
     transition-delay: .2s;
+}
+.home-6 {
+  padding: 20px 0;
+}
+.banner-five {
+  background-image: url(../images/banner-home-5.1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.banner-five.second {
+  background-image: url(../images/banner-home-5.png);
+  color: rgb(33,37,41);
+}
+.banner-five:hover {
+    opacity: 1;
+    animation: flash 1.5s;
+}
+.banner-five .banner-detail  {
+  padding: 40px;
+}
+.banner-five .banner-detail h6 {
+    font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+    margin-bottom: calc(10px + 10 * (100vw - 320px) / 1600);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 12px;
+}
+.banner-five .banner-detail h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.banner-five .banner-detail h4 {
+    font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+.button-link-to {
+  padding: 8px 20px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.button-link-to.second {
+  background-color: rgb(255,255,255);
+  color: var(--theme-color);
+}
+.button-link-to.theme {
+  background-color: var(--theme-color);
+  color: white;
+}
+.banner-five.second .banner-detail h4 {
+  color: #4a5568;
+}
+.wrap-title-border {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: calc(14px + 6 * (100vw - 320px) / 1600);
+    margin-bottom: calc(5px + 5 * (100vw - 320px) / 1600);
+}
+.wrap-title-border .title-border{
+    font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #222;
+}
+.home-7 {
+  padding: 40px 0;
+}
+.product-mini {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+.product-mini .wrap-img {
+    width: calc(84px + 32 * (100vw - 320px) / 1600);
+    height: calc(84px + 32 * (100vw - 320px) / 1600);
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    padding: 15px;
+    overflow: hidden;
+}
+.product-mini .wrap-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
+}
+.product-mini .product-detail a .name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.product-mini:hover .wrap-img img {
+  transform: scale(1.1);
+}
+.product-mini .product-detail {
+  transition: all 0.5s;
+}
+.product-mini:hover .product-detail .rating, 
+.product-mini:hover .product-detail .name,
+.product-mini:hover .product-detail .price
+ {
+  opacity: 0;
+}
+.product-mini:hover .option li {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.product-mini .product-image .option {
+  left: 0;
+  transform: translateY(-50%);
+}
+.product-mini:hover .product-detail .option li:nth-child(1) {
+    transition-delay: .1s;
+}
+.product-mini:hover .product-detail .option li:nth-child(2) {
+    transition-delay: .2s;
+}
+.product-mini:hover .product-detail .option li:nth-child(3) {
+    transition-delay: .3s;
+}
+.product-mini:hover .product-detail .option li:nth-child(4) {
+    transition-delay: .4s;
 }
 @keyframes flash {
   0% {
