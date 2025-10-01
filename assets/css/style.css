@@ -220,7 +220,7 @@ span.badge-number {
 .home-1 .wrap-left .title-main {
   font-size: 40px;
   margin-bottom: 8px;
-  color: #000;
+  color: #222;
   font-weight: 700;
 }
 
@@ -781,7 +781,7 @@ ul.list-tab li .btn-tab:hover {
 .buy-pro {
     border: 0;
     background-color: var(--theme-color);
-    padding: 5px 18px;
+    padding: 5px 15px;
     border-radius: 6px;
     color: white;
 }
@@ -976,6 +976,123 @@ ul.list-tab li .btn-tab:hover {
 }
 .product-mini:hover .product-detail .option li:nth-child(4) {
     transition-delay: .4s;
+}
+.home-8 .banner-mid {
+  background-image: url(../images/banner-6.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+.banner-mid .banner-detail h4 {
+    font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+.ls-12 {
+  letter-spacing: 12px;
+}
+.banner-mid .banner-detail .title-banner{
+  font-weight: 600;
+  line-height: 1;
+  text-transform: capitalize;
+  font-size: calc(25px + 20 * (100vw - 320px) / 1600);
+}
+.banner-mid .banner-detail .text-content{
+    font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+    margin-bottom: 5px;
+    line-height: 1.4;
+    color: #4a5568;
+    font-weight: 300;
+}
+.banner-mid:hover {
+  animation: flash 1.5s;
+}
+.home-8, .home-9, .home-10 {
+  padding: 20px 0;
+}
+.home-9 .list-product-pro .item {
+    width: calc(100% / 5 - 40px / 5);
+}
+.list-blog {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+.list-blog .blog-item {
+  width: calc(100%/3 - 40px / 3);
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  position: relative;
+  overflow: hidden;
+}
+.list-blog .blog-item .blog-detail {
+  padding: 15px;
+}
+.blog-detail .blog-category  {
+    font-size: 12px;
+    padding: 7px 11px;
+    border-radius: 50px;
+    color: var(--theme-color);
+    margin-bottom: calc(4px + 8 * (100vw - 320px) / 1600);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.blog-detail .blog-category::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--theme-color);
+    opacity: .1;
+    z-index: -1;
+}
+.blog-item .blog-detail h2 {
+    font-size: calc(18px + 4 * (100vw - 320px) / 1600);
+    line-height: 1.4;
+    font-weight: 600;
+    color: #222;
+}
+.ratio_50 .bg-size:before {
+    content: "";
+    padding-top: 50%;
+    display: block;
+}
+.bg-size .cover-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-item .blog-detail .blog-list {
+  display: flex;
+  align-items: center;
+  gap: calc(14px + 8 * (100vw - 320px) / 1600);
+}
+.blog-item .blog-detail .blog-list span {
+    color: #4a5568;
+    margin-bottom: -5px;
+    font-size: calc(13px + 1 * (100vw - 320px) / 1600);
+}
+.blog-item .blog-box-image img{
+  transition: all 0.5s;
+}
+.blog-item:hover .blog-box-image img {
+    transform: scale(1.12) rotate(3deg);
+}
+.blog-item:hover .blog-detail .blog-category::before {
+    opacity: 1;
+}
+.blog-item:hover .blog-detail .blog-category {
+  color: white;
 }
 @keyframes flash {
   0% {
