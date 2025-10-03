@@ -15,10 +15,32 @@
 <body>
     <!-- Top Bar -->
     <div class="header-notification text-white text-center position-relative py-2">
-        <div class="item">
-            <p class="item-notify m-0">Free shipping on all your order. We deliver you enjoy</p>
+        <div class="wrap-notification">
+            <div class="item">
+                <p class="item-notify m-0">Free shipping on all your order. We deliver you enjoy</p>
+            </div>
+            <div class="item">
+                <p class="item-notify m-0">
+                    <strong class="me-1">Welcome to Fastkart!</strong>Wrap new offers/gift
+                    every single day on Weekends.<strong class="ms-1">New Coupon Code: Fast024
+                    </strong>
+                </p>
+            </div>
+            <div class="item">
+                <p class="item-notify m-0">Free shipping on all your order. We deliver you enjoy</p>
+            </div>
+            <div class="item">
+                <p class="item-notify m-0">
+                    <strong class="me-1">Welcome to Fastkart!</strong>Wrap new offers/gift
+                    every single day on Weekends.<strong class="ms-1">New Coupon Code: Fast024
+                    </strong>
+                </p>
+            </div>
+            <div class="item">
+                <p class="item-notify m-0">Free shipping on all your order. We deliver you enjoy</p>
+            </div>
         </div>
-        <button class="btn close-notification position-absolute top-50 translate-middle">
+        <button class="close-notification position-absolute top-50 btn-lab">
             <span>Close</span>
             <i class="fas fa-times"></i>
         </button>
@@ -37,9 +59,9 @@
                 </div>
 
                 <!-- Search box -->
-                <div class="col-md-5 d-flex align-items-center">
+                <div class="col-md-6 d-flex align-items-center">
                     <div class="location-box-2">
-                        <button class="btn location-button" data-bs-toggle="modal" data-bs-target="#locationModal">
+                        <button class="loca-btn" data-bs-toggle="modal" data-bs-target="#locationModal">
                             <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -50,7 +72,7 @@
                     <form class="d-flex form-search flex-1 position-relative">
                         <input class="form-control" type="search"
                             placeholder="Search for product, delivered to your door..." aria-label="Search">
-                        <button class="btn search-button">
+                        <button class="loca-btn search-button">
                             <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
                                 <circle cx="11" cy="11" r="8"></circle>
@@ -61,7 +83,7 @@
                 </div>
 
                 <!-- Icons & Dropdowns -->
-                <div class="col-md-5 d-flex justify-content-end align-items-center gap-3">
+                <div class="col-md-4 d-flex justify-content-end align-items-center gap-3 p-0">
                     <div class="dropdown-dollar d-flex align-items-center">
                         <div class="dropdown">
                             <button class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -69,22 +91,22 @@
                                 <span>Language</span> <i class="fa-solid fa-angle-down"></i>
                             </button>
                             <ul class="dropdown-menu">
-                                <li>
+                                <li class="d-block">
                                     <a id="eng" class="dropdown-item">English</a>
                                 </li>
-                                <li>
+                                <li class="d-block">
                                     <a id="hin" class="dropdown-item">Hindi</a>
                                 </li>
-                                <li>
+                                <li class="d-block">
                                     <a id="guj" class="dropdown-item">Gujarati</a>
                                 </li>
-                                <li>
+                                <li class="d-block">
                                     <a id="arb" class="dropdown-item">Arabic</a>
                                 </li>
-                                <li>
+                                <li class="d-block">
                                     <a id="rus" class="dropdown-item">Russia</a>
                                 </li>
-                                <li>
+                                <li class="d-block">
                                     <a class="dropdown-item">Chinese</a>
                                 </li>
                             </ul>
@@ -150,35 +172,138 @@
                 <ul class="navbar-nav gap-3">
                     <li class="nav-item d-flex align-items-center position-relative">
                         <i class="fa-solid fa-border-all all-icon"></i>
-                        <a class="nav-link nav-category" href="#">All Categories</a>
+                        <a class="nav-link nav-category color-black-custom" href="#">All Categories</a>
                     </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Home</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center color-black-custom" href="#">Home
+                        </a>
                     </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Shop</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center color-black-custom" href="#">About us
+                        </a>
                     </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Product</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center color-black-custom" href="#">Product
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu menu-product">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div class="dropdown-column m-0">
+                                        <h5 class="dropdown-header">
+                                            Product Pages </h5>
+                                        <a class="dropdown-item" href="product-left-thumbnail.html">Product
+                                            Thumbnail</a>
+                                        <a class="dropdown-item" href="product-4-image.html">Product
+                                            Images</a>
+                                        <a class="dropdown-item" href="product-slider.html">Product
+                                            Slider</a>
+                                        <a class="dropdown-item" href="product-sticky.html">Product
+                                            Sticky</a>
+                                        <a class="dropdown-item" href="product-accordion.html">Product Accordion</a>
+                                        <a class="dropdown-item" href="product-circle.html">Product
+                                            Tab</a>
+                                        <a class="dropdown-item" href="product-digital.html">Product
+                                            Digital</a>
+
+                                        <h5 class="custom-mt dropdown-header">Product Features
+                                        </h5>
+                                        <a class="dropdown-item" href="product-circle.html">Bundle
+                                            (Cross Sale)</a>
+                                        <a class="dropdown-item" href="product-left-thumbnail.html">Hot Stock
+                                            Progress <label class="menu-label">New</label>
+                                        </a>
+                                        <a class="dropdown-item" href="product-sold-out.html">SOLD
+                                            OUT</a>
+                                        <a class="dropdown-item" href="product-circle.html">
+                                            Sale Countdown</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="dropdown-column m-0">
+                                        <h5 class="dropdown-header">
+                                            Product Variants Style </h5>
+                                        <a class="dropdown-item" href="product-rectangle.html">Variant Rectangle</a>
+                                        <a class="dropdown-item" href="product-circle.html">Variant
+                                            Circle <label class="menu-label">New</label></a>
+                                        <a class="dropdown-item" href="product-color-image.html">Variant Image
+                                            Swatch</a>
+                                        <a class="dropdown-item" href="product-color.html">Variant
+                                            Color</a>
+                                        <a class="dropdown-item" href="product-radio.html">Variant
+                                            Radio Button</a>
+                                        <a class="dropdown-item" href="product-dropdown.html">Variant Dropdown</a>
+                                        <h5 class="custom-mt dropdown-header">Product Features
+                                        </h5>
+                                        <a class="dropdown-item" href="product-left-thumbnail.html">Sticky
+                                            Checkout</a>
+                                        <a class="dropdown-item" href="product-dynamic.html">Dynamic
+                                            Checkout</a>
+                                        <a class="dropdown-item" href="product-sticky.html">Secure
+                                            Checkout</a>
+                                        <a class="dropdown-item" href="product-bundle.html">Active
+                                            Product view</a>
+                                        <a class="dropdown-item" href="product-bundle.html">
+                                            Active
+                                            Last Orders
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="dropdown-column m-0">
+                                        <h5 class="dropdown-header">
+                                            Product Features </h5>
+                                        <a class="dropdown-item" href="product-image.html">Product
+                                            Simple</a>
+                                        <a class="dropdown-item" href="product-rectangle.html">
+                                            Product Classified <label class="menu-label">New</label>
+                                        </a>
+                                        <a class="dropdown-item" href="product-size-chart.html">Size
+                                            Chart <label class="menu-label">New</label></a>
+                                        <a class="dropdown-item" href="product-size-chart.html">Delivery &amp;
+                                            Return</a>
+                                        <a class="dropdown-item" href="product-size-chart.html">Product Review</a>
+                                        <a class="dropdown-item" href="product-expert.html">Ask
+                                            an Expert</a>
+                                        <h5 class="custom-mt dropdown-header">Product Features
+                                        </h5>
+                                        <a class="dropdown-item" href="product-bottom-thumbnail.html">Product
+                                            Tags</a>
+                                        <a class="dropdown-item" href="product-image.html">Store
+                                            Information</a>
+                                        <a class="dropdown-item" href="product-image.html">Social
+                                            Share <label class="menu-label warning-label">Hot</label>
+                                        </a>
+                                        <a class="dropdown-item" href="product-left-thumbnail.html">Related Products
+                                            <label class="menu-label warning-label">Hot</label>
+                                        </a>
+                                        <a class="dropdown-item" href="product-right-thumbnail.html">Wishlist &amp;
+                                            Compare</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 d-xl-block d-none">
+                                    <div class="dropdown-column m-0">
+                                        <div class="menu-img-banner">
+                                            <a class="text-title" href="product-circle.html">
+                                                <img src="./assets/images/mega-menu.png" alt="banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Mega Menu</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center color-black-custom" href="#">Blog
+                        </a>
                     </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Blog</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center color-black-custom" href="#">Contact
+                        </a>
                     </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Pages</a>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Seller</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center color-black-custom" href="#">Faq
+                        </a>
                     </li>
                 </ul>
             </div>
