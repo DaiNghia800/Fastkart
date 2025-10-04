@@ -33,25 +33,29 @@ if(buttonShow){
 // End user Dashboard Left Sidebar Show
 
 // quantity 
-const qtyLeftMinus = document.querySelector(".qty-left-minus");
-const qtyRightPlus = document.querySelector(".qty-right-plus");
+const qtyLeftMinus = document.querySelectorAll(".qty-left-minus");
+const qtyRightPlus = document.querySelectorAll(".qty-right-plus");
 
-if(qtyLeftMinus && qtyRightPlus){
-  qtyLeftMinus.addEventListener("click", () => {
-    const input = qtyLeftMinus.nextElementSibling;
-    let value = parseInt(input.value) || 0;
+if(qtyLeftMinus.length > 0 && qtyRightPlus.length > 0){
+  qtyLeftMinus.forEach(button => {
+    button.addEventListener("click", () => {
+      const input = button.nextElementSibling;
+      let value = parseInt(input.value) || 0;
 
-    if(value > 1){
-      input.value = value - 1;
-    }
+      if(value > 1){
+        input.value = value - 1;
+      }
+    })
   })
 
-  qtyRightPlus.addEventListener("click", () => {
-    const input = qtyRightPlus.previousElementSibling;
-    let value = parseInt(input.value) || 0;
+  qtyRightPlus.forEach(button => {
+    button.addEventListener("click", () => {
+      const input = button.previousElementSibling;
+      let value = parseInt(input.value) || 0;
 
-    if(value <= 100)
-    input.value = value + 1;
+      if(value <= 100)
+      input.value = value + 1;
+    })
   })
 }
 // end quantity 
