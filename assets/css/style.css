@@ -560,7 +560,41 @@ span.badge-number {
   border-radius: 10px;
   position: relative;
 }
-
+.theme-option {
+    position: fixed;
+    bottom: calc(7px + 0.9375vw);
+    right: calc(7px + 0.9375vw);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.theme-option .back-to-top {
+    background-color: var(--theme-color);
+    z-index: 1;
+    margin-top: 12px;
+    padding: 0px;
+    border-radius: 5px;
+}
+.theme-option .back-to-top a {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: calc(28px + 0.625vw);
+    height: calc(28px + 0.625vw);
+    text-decoration: none;
+    font-size: 14px;
+}
+.theme-option .back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.theme-option .back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
 .three-slider .item-banner.banner-2 {
   background-image: url(../images/bg-baner-2.png);
 }
