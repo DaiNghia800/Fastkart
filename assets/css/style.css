@@ -96,7 +96,7 @@ body {
   height: 70px;
   opacity: 0.1;
   z-index: 1;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* --- Style cho button đã chọn (active) --- */
@@ -116,16 +116,18 @@ body {
 }
 
 .shop-sidebar-left ul li:hover:not(.active) .category-icon {
-  transform: translateY(-50%) rotate(-5deg);
+  transform: scale(1.1) translateY(-50%) rotate(-5deg);
   opacity: 0.2;
-  right: 15px;
+  right: 0;
 }
 
 .col-custom {
   width: 75%;
   animation: spin 4s linear infinite;
 }
-
+.show-button{
+  margin: 10px;
+}
 .top-filter-menu {
   display: flex;
 }
@@ -216,6 +218,7 @@ body {
 
 .product-header {
   position: relative;
+  height: 140px;
 }
 
 .product-box {
@@ -375,6 +378,7 @@ body {
 
 .add-btn span {
   text-align: center;
+  margin: 0;
 }
 
 .add-btn i {
@@ -405,10 +409,11 @@ body {
 
 .page-item i {
   border: none;
+  font-size: 14px;
 }
 
 .page-item span {
-  padding: 5px 15px;
+  padding: 3px 10px;
   border-radius: 5px;
   border: 1px solid transparent;
 }
@@ -421,19 +426,42 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
+  transition: all 0.5s ease;
 }
 
 .page-item.active:hover {
   background-color: #fff;
   color: #777;
   border: 1px solid #0da487;
+  transform: translateY(0);
+  opacity: 1;
 }
-
-.page-item:not(.active):hover span {
+.page-item:not(.active){
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+.page-item:not(.active):hover {
   border: 1px solid #0da487;
+  border-radius: 5px;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* End Shop category sidebar */
+
+/* Contact us */
+.container-fluid{
+  margin-top: 100px;
+  padding: 0 calc(12px + 148*(100vw - 320px)/1600);
+}
+.contact-image{
+  text-align: center;
+  margin-bottom: calc(25px + 39*(100vw - 320px)/1600);
+}
+.contact-image img{
+  width: 60%;
+}
+/* End Contact us */
 
 /* Desktop lớn (≥ 1200px) */
 @media (min-width: 1201px) {
