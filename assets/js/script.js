@@ -1,5 +1,5 @@
-$('.product-list').slick({
-  slidesToShow:6,
+$('.product-lists').slick({
+  slidesToShow:5,
    dots: true,
   infinite: true,
   speed: 500,
