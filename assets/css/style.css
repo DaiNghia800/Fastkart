@@ -266,7 +266,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   bottom: 0;
   left: 50%;
-   transform: translateX(-50%) translateY(100%);
+  transform: translateX(-50%) translateY(100%);
   z-index: 5;
   transition: all 0.8s ease;
   /* dịch xuống 20px để tạo hiệu ứng trượt */
@@ -275,7 +275,7 @@ body {
 
 .product-box:hover .product-option {
   opacity: 1;
-   transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 .product-option i {
@@ -434,6 +434,196 @@ body {
 }
 
 /* End Shop category sidebar */
+
+/* Contact us */
+.container-fluid {
+  margin-block: 50px;
+  padding: 0 calc(12px + 148*(100vw - 320px)/1600);
+}
+
+.contact-image {
+  text-align: center;
+  margin-bottom: calc(25px + 39*(100vw - 320px)/1600);
+}
+
+.contact-image img {
+  width: 60%;
+}
+
+.left-contact-us .contact-title {
+  margin-bottom: calc(20px + 12*(100vw - 320px)/1600);
+}
+
+.left-contact-us .contact-title h3 {
+  position: relative;
+  display: inline-block;
+  font-size: calc(23px + 5*(100vw - 320px)/1600);
+  font-weight: 600;
+}
+
+.left-contact-us .contact-title h3::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #0da487;
+}
+
+.contact-detail .contact-detail-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8f8f8;
+  padding: calc(15px + 12*(100vw - 320px)/1600) calc(15px + 12*(100vw - 320px)/1600) calc(15px + 12*(100vw - 320px)/1600) calc(30px + 11*(100vw - 320px)/1600);
+  border-radius: 5px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.contact-detail .contact-detail-box i {
+  border: 1px solid #0da487;
+  background-color: #0da487;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  position: absolute;
+  display: inherit;
+  left: -21px;
+}
+
+.contact-detail-box .contact-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+}
+
+.contact-detail-box .contact-content h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-detail-box .contact-content p {
+  margin: 0;
+  font-size: calc(14px + 1*(100vw - 320px)/1600);
+  color: #4a5568;
+}
+
+.contact-us-title {
+  margin-bottom: calc(16px + 14*(100vw - 320px)/1600);
+  display: inline-block;
+  position: relative;
+}
+
+.right-contact-us {
+  padding: calc(21px + 39*(100vw - 320px)/1600);
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.right-contact-us .custom-form {
+  margin-bottom: 30px;
+}
+
+.right-contact-us .custom-form label {
+  color: #4a5568;
+  display: block;
+  font-size: 16px;
+  margin-bottom: calc(3px + 5*(100vw - 320px)/1600);
+}
+
+.right-contact-us .custom-form .custom-input {
+  position: relative;
+}
+
+.right-contact-us .custom-form .custom-input input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+.right-contact-us .custom-form .custom-text {
+  position: relative;
+}
+
+.right-contact-us .custom-form .custom-text textarea {
+  width: 100%;
+  height: 175px;
+  border-radius: 5px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+.right-contact-us .custom-form .custom-input i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 calc(14px + 6*(100vw - 320px)/1600);
+  display: flex;
+  align-items: center;
+  color: #4a5568;
+}
+
+.right-contact-us .custom-form .custom-text i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px calc(14px + 6*(100vw - 320px)/1600);
+  display: flex;
+  color: #4a5568;
+}
+
+.send-btn {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.send-btn button {
+  border: none;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom,
+      rgba(253, 71, 71, 0.8),
+      /* Màu 1: Hiển thị khi không hover */
+      rgba(252, 57, 57, 0.932)
+      /* Màu 2: Hiển thị khi hover */
+    );
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.4s ease;
+  z-index: 1;
+}
+
+
+.send-btn button:hover {
+  background: linear-gradient(to left, rgba(253, 71, 71, 0.8), rgba(252, 57, 57, 0.932));
+
+}
+
+.map-section{
+  width: 100%;
+}
+
+.map-box iframe{
+  width: 100%;
+  min-height: 350px;
+}
+/* End Contact us */
 
 /* Desktop lớn (≥ 1200px) */
 @media (min-width: 1201px) {
