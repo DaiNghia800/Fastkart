@@ -440,10 +440,16 @@ body {
   margin-block: 50px;
   padding: 0 calc(12px + 148*(100vw - 320px)/1600);
 }
-
+.contact-us-left{
+  /* margin-right: 10px; */
+}
+.contact-us-right{
+  /* margin-left: 10px; */
+}
 .contact-image {
   text-align: center;
   margin-bottom: calc(25px + 39*(100vw - 320px)/1600);
+  margin-right: 15px;
 }
 
 .contact-image img {
@@ -452,6 +458,7 @@ body {
 
 .left-contact-us .contact-title {
   margin-bottom: calc(20px + 12*(100vw - 320px)/1600);
+  margin-right: 15px;
 }
 
 .left-contact-us .contact-title h3 {
@@ -470,7 +477,9 @@ body {
   left: 0;
   background: #0da487;
 }
-
+.contact-detail{
+  margin-right: 15px;
+}
 .contact-detail .contact-detail-box {
   display: flex;
   align-items: center;
@@ -516,12 +525,14 @@ body {
   margin-bottom: calc(16px + 14*(100vw - 320px)/1600);
   display: inline-block;
   position: relative;
+  margin-left: 15px;
 }
 
 .right-contact-us {
   padding: calc(21px + 39*(100vw - 320px)/1600);
   border-radius: 10px;
   background-color: #f8f8f8;
+  margin-left: 15pxgit status;
 }
 
 .right-contact-us .custom-form {
