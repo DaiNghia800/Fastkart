@@ -218,7 +218,7 @@ body {
   position: relative;
 }
 
-.product-box {
+.col-custom .product-list .product-box {
   padding: 10px;
   width: calc(100% / 3);
   height: 388px;
@@ -796,11 +796,123 @@ body {
   transition: all .3s ease;
 }
 
-.btn-animation:hover{
+.btn-animation:hover {
   color: #fff;
 }
 
 /* End otp */
+
+/* Search */
+.search-section .search-title {
+  text-align: center;
+  margin-bottom: calc(16px + 14*(100vw - 320px)/1600);
+  position: relative;
+}
+
+.search-section .search-title h2 {
+  font-weight: 700;
+  color: #222;
+  position: relative;
+}
+
+.search-section .search-title span {
+  width: 140px;
+  margin: 7px auto 0;
+  color: #0da487;
+  display: flex;
+  align-items: center;
+}
+
+.search-section .search-title span::before,
+.search-section .search-title span::after {
+  content: "";
+  height: 1px;
+  background-color: #0da487;
+  flex-grow: 1;
+}
+
+.search-section .search-title span i {
+  padding: 0 15px;
+}
+
+.search-section .search-box {
+  position: relative;
+}
+
+.search-section .search-box .input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.search-section .search-box .input-group input {
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+.search-section .search-box .input-group button{
+  border: none;
+  background-color: #0da487;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.search-b-section {
+  border: 1px solid;
+}
+
+.search-b-section .search-product{
+  gap: 20px;
+}
+
+.search-b-section .search-product .product-slider{
+  display: flex;
+  gap: 20px;
+}
+.search-product .product-box{
+  width: calc(100%/6);
+  margin: 0 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d1d1d1;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.slick-dots li.slick-active button {
+  width: 35px;
+  border-radius: 10px;
+  background-color: #0da487;
+  z-index: 1;
+}
+
+/* End search */
 
 /* Desktop lớn (≥ 1200px) */
 @media (min-width: 1201px) {
