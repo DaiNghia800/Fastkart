@@ -5,6 +5,7 @@
 //     infinite:true,
 // });
 
+// Search
 $(document).ready(function(){
   $('.product-slider').slick({
     slidesToShow: 5,    // Số sản phẩm hiển thị cùng lúc
@@ -15,3 +16,4 @@ $(document).ready(function(){
     infinite: true      // Lặp vô hạn
   });
 });
+// End Search
