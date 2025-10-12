@@ -42,6 +42,19 @@ $('.wrap-pr-second').slick({
   prevArrow: $('.home-7 .wrap-btn.second  .btn-simp.slick-prev-custom'),
   nextArrow: $('.home-7 .wrap-btn.second  .btn-simp.slick-next-custom'),
 });
+$('.slide-about-2').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false
+});
+$('.slider-user').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true
+});
 const headerNotification = document.querySelector('.header-notification');
 const buttonCloseNotification = document.querySelector('.close-notification');
 buttonCloseNotification.addEventListener('click', () => {
