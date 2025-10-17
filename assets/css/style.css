@@ -41,6 +41,10 @@ body {
   html {
     font-size: 15px;
   }
+  .faq-breadcrumb .breadcrumb-contain .faq-form-tag {
+    margin: 10px !important;;
+    width:auto !important;
+  }
 }
 
 /* product-left-box */
@@ -1256,7 +1260,9 @@ body {
 /* faq-contain */
 .faq-contain {
   margin-bottom: calc(30px + 20 * (100vw - 320px) / 1600);
-  padding-top: calc(30px + 20 * (100vw - 320px) / 1600);
+}
+.faq-contain-padding{
+   padding-top: calc(30px + 20 * (100vw - 320px) / 1600);
 }
 
 .faq-contain .faq-top-box {
@@ -1324,6 +1330,7 @@ body {
   margin: calc(8px + 7 * (100vw - 320px) / 1600) 0 0;
   font-size: calc(13px + 2 * (100vw - 320px)/1600);
   line-height: 1.5;
+  padding-bottom: 10px;
 }
 
 .faq-box-contain .faq-accordion .accordion {
