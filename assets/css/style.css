@@ -116,7 +116,7 @@ body {
 }
 
 .shop-sidebar-left ul li:hover:not(.active) .category-icon {
-  transform: translateY(-50%) rotate(-5deg);
+  transform: scale(1.1) translateY(-50%) rotate(-5deg);
   opacity: 0.2;
   right: 15px;
 }
