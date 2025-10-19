@@ -96,7 +96,7 @@ body {
   height: 70px;
   opacity: 0.1;
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 /* --- Style cho button đã chọn (active) --- */
