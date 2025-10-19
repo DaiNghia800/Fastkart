@@ -440,12 +440,7 @@ body {
   margin-block: 50px;
   padding: 0 calc(12px + 148*(100vw - 320px)/1600);
 }
-.contact-us-left{
-  /* margin-right: 10px; */
-}
-.contact-us-right{
-  /* margin-left: 10px; */
-}
+
 .contact-image {
   text-align: center;
   margin-bottom: calc(25px + 39*(100vw - 320px)/1600);
@@ -477,9 +472,11 @@ body {
   left: 0;
   background: #0da487;
 }
-.contact-detail{
+
+.contact-detail {
   margin-right: 15px;
 }
+
 .contact-detail .contact-detail-box {
   display: flex;
   align-items: center;
@@ -626,14 +623,15 @@ body {
 
 }
 
-.map-section{
+.map-section {
   width: 100%;
 }
 
-.map-box iframe{
+.map-box iframe {
   width: 100%;
   min-height: 350px;
 }
+
 /* End Contact us */
 
 /* Desktop lớn (≥ 1200px) */
@@ -649,6 +647,11 @@ body {
   html {
     font-size: 15px;
   }
+
+  /* Contact-us */
+  
+  /*End Contact-us */
+
 }
 
 
