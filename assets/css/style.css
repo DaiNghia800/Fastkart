@@ -701,12 +701,12 @@ body {
   gap: 10px;
   color: #4a5568;
   margin-top: 8px;
+  font-size: calc(15px + 1*(100vw - 320px)/1600);
 }
 
 .log-in-section .inputs {
   margin: calc(-2px + -10*(100vw - 320px)/1600);
   display: flex;
-  gap: 10px;
 }
 
 .log-in-section .inputs input {
@@ -721,7 +721,7 @@ body {
   display: block;
   width: calc(100%/6);
   padding: 12px;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -729,6 +729,7 @@ body {
   background-clip: padding-box;
   appearance: none;
   border-radius: .25rem;
+  /* aspect-ratio: 1/1; */
   transition: all .3s ease-in-out;
 }
 
@@ -832,6 +833,12 @@ body {
   html {
     font-size: 15px;
   }
+
+  /* otp */
+  .log-in-section .log-in-box{
+    margin: 0;
+  }
+  /* End otp */
 }
 
 
