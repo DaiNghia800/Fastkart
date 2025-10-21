@@ -1961,6 +1961,7 @@ footer .main-footer .footer-contact {
   }
   .list-product-pro {
     gap: 0px;
+    row-gap: 10px;
   }
   .list-product-pro .item, .home-9 .list-product-pro .item {
     width: 100%;
