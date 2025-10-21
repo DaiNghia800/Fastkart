@@ -13,6 +13,32 @@ $('.category-slider').slick({
   arrows: true,
   prevArrow: $('.home-2 .wrap-btn  .custom.slick-prev-custom'),
   nextArrow: $('.home-2 .wrap-btn .custom.slick-next-custom'),
+  responsive: [
+    {
+      breakpoint: 1080,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });
 $('.three-slider').slick({
   slidesToShow: 3,
@@ -20,6 +46,20 @@ $('.three-slider').slick({
   arrows: true,
   prevArrow: $('.home-3 .wrap-btn  .custom.slick-prev-custom'),
   nextArrow: $('.home-3 .wrap-btn .custom.slick-next-custom'),
+  responsive: [
+    {
+      breakpoint: 771,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 578,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 $('.list-hot-deals').slick({
   slidesToShow: 2,
@@ -27,6 +67,14 @@ $('.list-hot-deals').slick({
   arrows: true,
   prevArrow: $('.home-4 .wrap-btn  .custom.slick-prev-custom'),
   nextArrow: $('.home-4 .wrap-btn .custom.slick-next-custom'),
+  responsive: [
+    {
+      breakpoint: 771,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 $('.wrap-pr-first').slick({
   slidesToShow: 1,
@@ -41,6 +89,24 @@ $('.wrap-pr-second').slick({
   arrows: true,
   prevArrow: $('.home-7 .wrap-btn.second  .btn-simp.slick-prev-custom'),
   nextArrow: $('.home-7 .wrap-btn.second  .btn-simp.slick-next-custom'),
+});
+$('.list-blog').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 771,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 578,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 const headerNotification = document.querySelector('.header-notification');
 const buttonCloseNotification = document.querySelector('.close-notification');
