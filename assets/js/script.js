@@ -111,7 +111,22 @@ $('.list-blog').slick({
 $('.slide-about-2').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  arrows: false
+  arrows: false,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 578,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 $('.slider-user').slick({
   slidesToShow: 3,
@@ -119,13 +134,47 @@ $('.slider-user').slick({
   arrows: false,
   autoplay: true,
   autoplaySpeed: 2000,
-  dots: true
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 578,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 $('.slider-5').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
-  dots: false
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 $('.slider-4-half').slick({
     arrows: false,

@@ -2331,6 +2331,9 @@ footer .main-footer .footer-contact {
   .banner-five.second {
     margin-top: 20px;
   }
+  .about-2 {
+    padding: 20px 0;
+  }
   
 }
 
@@ -2375,5 +2378,21 @@ footer .main-footer .footer-contact {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+  .breadcrumb-contain {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .breadcrumb-section .breadcrumb-contain h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .about-1,
+  .about-2,
+  .about-3,
+  .about-4,
+  .about-5 {
+    padding: 30px 0;
   }
 }
