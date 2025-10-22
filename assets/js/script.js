@@ -40,6 +40,37 @@ $('.category-slider').slick({
     }
   ]
 });
+$('.product-lists').slick({
+  slidesToShow:5,
+   dots: true,
+  infinite: true,
+  speed: 500,
+  cssEase: 'linear',
+   slidesToScroll: 1,
+   responsive:[
+    {
+      breakpoint: 599,
+      settings: {
+       slidesToShow:2,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+       slidesToShow:3,
+        dots: true,
+      }
+    },
+     {
+      breakpoint: 1200,
+      settings: {
+       slidesToShow:4,
+        dots: true,
+      }
+    },
+   ]
+});
 $('.three-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -246,4 +277,5 @@ mybutton.addEventListener('click', () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
 
