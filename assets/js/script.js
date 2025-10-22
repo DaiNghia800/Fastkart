@@ -5,6 +5,29 @@ $('.product-lists').slick({
   speed: 500,
   cssEase: 'linear',
    slidesToScroll: 1,
+   responsive:[
+    {
+      breakpoint: 599,
+      settings: {
+       slidesToShow:2,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+       slidesToShow:3,
+        dots: true,
+      }
+    },
+     {
+      breakpoint: 1200,
+      settings: {
+       slidesToShow:4,
+        dots: true,
+      }
+    },
+   ]
 });
 $('.slider-faq-box').slick({
   slidesToShow:4,
