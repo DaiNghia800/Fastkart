@@ -34,6 +34,34 @@ body {
   html {
     font-size: 15px;
   }
+  
+  .product-detail .right-box-contain .product-contain p {
+    width: 100% !important;
+  }
+  .product-detail .right-box-contain .price-rating {
+    display: block ;
+  }
+  .product-detail .right-box-contain .price-rating .custom-rate {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .product-detail .right-box-contain .buy-box,
+  .product-detail .right-box-contain .payment-option ul {
+    justify-content: center;
+  }
+  .product-detail .right-box-contain .pickup-box .pickup-detail h4 {
+    width: 100%!important;
+  }
+   .product-detail .right-box-contain {
+    text-align: center;
+  }
+    .product-package .select-package{
+    justify-content: center !important;
+  }
+   .mx-md-0{
+    margin-left: auto !important;
+    margin-right: auto !important;
+   }
 }
 
 /* Mobile nhỏ (≤ 576px) */
@@ -41,7 +69,14 @@ body {
   html {
     font-size: 15px;
   }
+  .product-detail .right-box-contain {
+    text-align: center;
+  }
+  .product-package .select-package{
+    justify-content: center !important;
+  }
 }
+
 
 /* product-left-box */
 .product-detail {
