@@ -859,9 +859,7 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
 }
-.search-b-section {
-  border: 1px solid;
-}
+
 
 .search-b-section .search-product{
   gap: 20px;
@@ -927,6 +925,14 @@ body {
   html {
     font-size: 15px;
   }
+
+  /* Search */
+
+  .search-product .product-box{
+  width: calc(100%/4);
+  margin: 0 10px;
+}
+  /* End search */
 }
 
 
