@@ -3516,5 +3516,13 @@ footer .main-footer .footer-contact {
   .product-package .select-package{
     justify-content: center !important;
   }
+  .product-detail .product-info .product-info-list {
+    column-count: 1;
+    padding-left: unset;
+  }
+  
+  .product-detail .product-info .product-info-list li::after{
+    display: none;
+  }
 }
 
