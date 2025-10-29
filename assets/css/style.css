@@ -303,14 +303,14 @@ body {
 }
 
 .product-detail-1 a h5 {
-  font-size: 16px;
+  font-size: calc(15px + 1*(100vw - 320px)/1600);
   font-weight: 500;
   margin: 0;
   line-height: 1.3;
 }
 
 .product-detail-1 h6 {
-  font-size: 14px;
+  font-size: calc(13px + 1*(100vw - 320px)/1600);
   color: #777;
   margin-top: 5px;
   margin-bottom: 0;
@@ -328,10 +328,12 @@ body {
   list-style: none;
   display: flex;
   color: #ffb321;
+  font-size: calc(15px + 1*(100vw - 320px)/1600);
 }
 
 .product-rate span {
   margin: 0;
+  font-size: calc(13px + 1*(100vw - 320px)/1600);
 }
 
 .rating-value {
@@ -345,7 +347,7 @@ body {
 }
 
 .product-detail-1 h5 span {
-  font-size: 18px;
+  font-size: calc(15px + 1*(100vw - 320px)/1600);
   color: #0da487;
   font-weight: 600;
   margin-right: 10px;
@@ -354,7 +356,7 @@ body {
 
 .product-detail-1 h5 del {
   color: #999;
-  font-size: 15px;
+  font-size: calc(13px + 1*(100vw - 320px)/1600);
   line-height: 1.3;
 }
 
@@ -929,11 +931,12 @@ body {
 
 .product-image .product-top button {
   border: none;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
   box-shadow: 0 3px 3px rgba(34,34,34,.24);
+  background-color: #fff;
 }
 
 .product-image .product-top .wishlist-button .feather {
@@ -965,6 +968,8 @@ body {
   html {
     font-size: 13px;
   }
+
+  
 }
 
 
@@ -981,5 +986,9 @@ body {
 @media (max-width: 576px) {
   html {
     font-size: 15px;
+  }
+
+  .add-btn i{
+    display: none;
   }
 }
