@@ -4205,6 +4205,9 @@ footer .main-footer .footer-contact {
   border-right-style: none;
 }
 
+.form-floating{
+  line-height: 2;
+}
 .checkbox_animated:checked:before {
   transform: rotate(-45deg) scale(1, 1);
 }
