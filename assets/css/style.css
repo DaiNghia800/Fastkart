@@ -4224,7 +4224,7 @@ footer .main-footer .footer-contact {
   cursor: pointer;
 }
 
-.btn-animation {
+.btn-animation.hp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4241,7 +4241,7 @@ footer .main-footer .footer-contact {
   z-index: 0;
 }
 
-.btn-animation::after {
+.btn-animation.hp::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -4256,11 +4256,11 @@ footer .main-footer .footer-contact {
 
 }
 
-.btn-animation:hover {
+.btn-animation.hp:hover {
   color: #fff;
 }
 
-.btn-animation:hover::after {
+.btn-animation.hp:hover::after {
   top: 0;
   height: 100%;
 }
