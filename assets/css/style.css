@@ -855,6 +855,11 @@ body {
   padding: 10px;
 }
 
+.search-section .search-box .input-group .form-control:focus{
+  border-color: #0da487;
+  box-shadow: 0 0 0 .05rem rgba(13,110,253,.25);
+}
+
 .search-section .search-box .input-group button{
   border: none;
   background-color: #0da487;
