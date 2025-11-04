@@ -5819,6 +5819,36 @@ footer .main-footer .footer-contact {
 
 /* End search */
 
+/* Wishlist */
+.wishlist-section .product-image {
+  position: relative;
+}
+
+.product-image .product-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product-image .product-top button {
+  border: none;
+  display: flex;
+  padding: 5px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 3px rgba(34,34,34,.24);
+  background-color: #fff;
+}
+
+.product-image .product-top .wishlist-button .feather {
+  width: 15px;
+  height: 15px;
+  color: #4a5568;
+}
+
+/* End Wishlist */
+
 /* Desktop lớn (≥ 1200px) */
 @media (min-width: 1201px) {
   html {
