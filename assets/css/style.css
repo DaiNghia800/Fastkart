@@ -931,7 +931,8 @@ body {
 
 .product-image .product-top button {
   border: none;
-  padding: 3px 8px;
+  display: flex;
+  padding: 5px;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
