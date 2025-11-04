@@ -298,32 +298,12 @@ $('.slider-4-half').slick({
     },
     ]
 });
-const headerNotification = document.querySelector('.header-notification');
-const buttonCloseNotification = document.querySelector('.close-notification');
-buttonCloseNotification.addEventListener('click', () => {
-    headerNotification.style.display = "none";
-});
-// Scroll top 
-let mybutton = document.getElementById("back-to-top");
-window.onscroll = () => scrollFunction();
-const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.classList.add("show");
-  } else {
-    mybutton.classList.remove("show");
-  }
-};
-mybutton.addEventListener('click', () => {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-});
-
 // Search
 $(document).ready(function(){
   $('.product-slider').slick({
-    slidesToShow: 5,    // Số sản phẩm hiển thị cùng lúc
+    slidesToShow: 4,    // Số sản phẩm hiển thị cùng lúc
     slidesToScroll: 3,  // Số sản phẩm trượt mỗi lần click
-    autoplay: true,     // Tự động trượt
+    // autoplay: true,     // Tự động trượt
     autoplaySpeed: 2000, // Tốc độ trượt (2 giây)
     dots: true,         // Hiển thị dấu chấm điều hướng
     infinite: true,      // Lặp vô hạn
@@ -351,8 +331,37 @@ $(document).ready(function(){
           slidesToScroll: 1
         }
       }
+      ,
+      {
+        breakpoint: 550, // Màn hình nhỏ hơn 768px
+        settings: {
+          slidesToShow: 1,   // 2 cái
+          slidesToScroll: 1
+        }
+      }
       // Bạn có thể thêm các breakpoint khác ở đây
     ]
   });
 });
 // End Search
+const headerNotification = document.querySelector('.header-notification');
+const buttonCloseNotification = document.querySelector('.close-notification');
+buttonCloseNotification.addEventListener('click', () => {
+    headerNotification.style.display = "none";
+});
+// Scroll top 
+let mybutton = document.getElementById("back-to-top");
+window.onscroll = () => scrollFunction();
+const scrollFunction = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.classList.add("show");
+  } else {
+    mybutton.classList.remove("show");
+  }
+};
+mybutton.addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
+

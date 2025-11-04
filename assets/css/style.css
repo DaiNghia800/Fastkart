@@ -4888,9 +4888,11 @@ footer .main-footer .footer-contact {
 
 .product-header {
   /* position: relative; */
-  height: 140px;
+  /* height: 140px; */
 }
-
+.product-box-wrap .product-image img {
+  display: inline!important;
+}
 .product-box {
   padding: 10px;
   width: calc(100% / 3);
