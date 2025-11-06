@@ -346,9 +346,12 @@ $(document).ready(function(){
 // End Search
 const headerNotification = document.querySelector('.header-notification');
 const buttonCloseNotification = document.querySelector('.close-notification');
-buttonCloseNotification.addEventListener('click', () => {
+if(buttonCloseNotification){
+  buttonCloseNotification.addEventListener('click', () => {
     headerNotification.style.display = "none";
 });
+}
+
 // Scroll top 
 let mybutton = document.getElementById("back-to-top");
 window.onscroll = () => scrollFunction();
@@ -359,9 +362,13 @@ const scrollFunction = () => {
     mybutton.classList.remove("show");
   }
 };
-mybutton.addEventListener('click', () => {
+
+if(mybutton){
+  mybutton.addEventListener('click', () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+}
+
 
 
